@@ -30,6 +30,7 @@ main(){
 
   // Listas - Arreglos
   //List<String> personajes = ['Superman', 'Batman'];
+  //var personajes = ['Batman', 'Superman'];
   List<String> personajes = new List();
   personajes..add('Batman')
             ..add('Superman');
