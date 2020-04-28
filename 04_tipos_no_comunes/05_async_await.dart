@@ -3,7 +3,7 @@ import 'dart:io';
 
 main() async {
 
-  String path = Directory.current.path+"\\assets\\personas.txt";
+  String path = Directory.current.path+"/04_tipos_no_comunes/assets/personas.txt";
 
   String texto = await leerArchivo(path);
   print(texto);

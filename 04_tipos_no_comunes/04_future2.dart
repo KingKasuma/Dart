@@ -3,7 +3,7 @@ import 'dart:io';
 
 main(){
 
-  File file = new File(Directory.current.path+"/assets\/personas.txt");
+  File file = new File(Directory.current.path+"/04_tipos_no_comunes/assets/personas.txt");
   //print(Directory.current.path);
 
   Future<String> f = file.readAsString(); //Retorna un Future<String>
