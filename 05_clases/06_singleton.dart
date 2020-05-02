@@ -1,4 +1,4 @@
-import 'mi_servicio.dart';
+import 'clases/mi_servicio.dart';
 // Siempre apunta al mismo objeto con el patron singleton
 main(){
 
