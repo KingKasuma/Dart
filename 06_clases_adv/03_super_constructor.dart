@@ -2,9 +2,10 @@ class Persona{
   String nombre;
   int edad;
 
+  //Constructor con dos argumentos obligatorios y posicionales
   Persona(this.nombre, this.edad);
 
-  void imprimirNombre() => print('Nombre: $nombre');
+  void imprimirNombre() => print('Nombre: $nombre, Edad: $edad');
 
 }
 
