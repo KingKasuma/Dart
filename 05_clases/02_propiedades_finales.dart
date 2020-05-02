@@ -9,6 +9,7 @@ class Cuadrado{
   // }
 
   //Cuadrado(this.lado, this.area);
+  //Forma en la que con una sola propiedad se puede realizar mas operaciones
   Cuadrado(int lado):
     this.lado = lado,
     this.area = lado * lado;
