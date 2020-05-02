@@ -21,6 +21,7 @@ class Persona{
   //}
   Persona({this.edad = 0, this.nombre = 'Sin nombre'});
 
+  //Constructor con nombre
   Persona.persona30(this.nombre){
     this.edad = 30;
   }
