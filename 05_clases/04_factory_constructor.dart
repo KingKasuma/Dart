@@ -4,6 +4,7 @@ class Rectangulo{
   int area;
   String tipo; // cuadrado base = altura, rectangulo base != altura
 
+  //Esto fignifica que debe de retornar una instancia de Rectangulo
   factory Rectangulo(int base, int altura){
     if (base == altura){
       return Rectangulo.cuadrado(base);
@@ -12,6 +13,7 @@ class Rectangulo{
     }
   }
 
+  //Constructor con nombre cuadrado
   Rectangulo.cuadrado(int base){
     this.base = base;
     this.altura = base;
@@ -19,6 +21,7 @@ class Rectangulo{
     this.tipo = 'Cuadrado';
   }
 
+//Constructor con nombre rectangulo
   Rectangulo.rectangulo(int base, int altura){
     this.base = base;
     this.altura = altura;

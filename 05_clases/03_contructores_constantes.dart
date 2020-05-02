@@ -2,6 +2,7 @@ class Location{
   final double lat;
   final double lng;
 
+  //Constructor constante
   const Location( this.lat, this.lng);
 }
 
@@ -13,11 +14,12 @@ main(List<String> args){
   //print(sanFrancisco1 == sanFrancisco2); // False
   //print(sanFrancisco2 == sanFrancisco3); // False
 
+  //Apuntan al mismo lugar en memoria
   const sanFrancisco4 = const Location(18.2323, 39.9000);
   const sanFrancisco5 = const Location(18.2323, 39.9001);
   const sanFrancisco6 = const Location(18.2323, 39.9001);
 
   print(sanFrancisco4 == sanFrancisco5); // False
-  print(sanFrancisco5 == sanFrancisco6); // False
+  print(sanFrancisco5 == sanFrancisco6); // True
 
 }
