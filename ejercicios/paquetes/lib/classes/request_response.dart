@@ -4,6 +4,8 @@
 
 import 'dart:convert';
 
+import 'package:paquetes/classes/persona.dart';
+
 ReqResRespuesta reqResRespuestaFromJson(String str) => ReqResRespuesta.fromJson(json.decode(str));
 
 String reqResRespuestaToJson(ReqResRespuesta data) => json.encode(data.toJson());
@@ -23,6 +25,7 @@ class ReqResRespuesta {
         this.data,
     });
 
+    //Constructor que devuelve una instancia de la clase y tambien es un constructor con nombre
     factory ReqResRespuesta.fromJson(Map<String, dynamic> json) => ReqResRespuesta(
         page: json["page"],
         perPage: json["per_page"],
@@ -40,34 +43,4 @@ class ReqResRespuesta {
     };
 }
 
-class Persona {
-    int id;
-    String email;
-    String firstName;
-    String lastName;
-    String avatar;
 
-    Persona({
-        this.id,
-        this.email,
-        this.firstName,
-        this.lastName,
-        this.avatar,
-    });
-
-    factory Persona.fromJson(Map<String, dynamic> json) => Persona(
-        id: json["id"],
-        email: json["email"],
-        firstName: json["first_name"],
-        lastName: json["last_name"],
-        avatar: json["avatar"],
-    );
-
-    Map<String, dynamic> toJson() => {
-        "id": id,
-        "email": email,
-        "first_name": firstName,
-        "last_name": lastName,
-        "avatar": avatar,
-    };
-}
