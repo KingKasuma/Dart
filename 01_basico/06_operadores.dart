@@ -1,20 +1,20 @@
-main(){
+main() {
   // Operadores de asignacion
   int a = 10;
-  int b;
+  int b = 1;
 
-  b ??= 20; // Asignar el valor unicamente si la variable es null
+  //b ??= 20; // Asignar el valor unicamente si la variable es null
 
   //print(b);
 
   // Operadores condicionales
   int c = 23;
-  String resp = c > 25 ? 'C es mayor a 25':'C es menor a 25';
+  String resp = c > 25 ? 'C es mayor a 25' : 'C es menor a 25';
 
   print(resp);
 
-  int d = b ?? a ?? 100;
-  print(d);
+  // int d = b ?? a ?? 100;
+  // print(d);
 
   // Operadores Relacionales
   // Todos retornan un valor booleano
@@ -26,7 +26,7 @@ main(){
 
    == Revisa si dos objetos son iguales
    != Revisa si dos objetos son diferentes
-  */  
+  */
 
   String persona1 = 'Fernando';
   String persona2 = 'Alberto';
@@ -45,8 +45,7 @@ main(){
   // Operador de tipo
   int i = 10;
   String j = '10';
-  
-  print( i is int);
-  print( j is! int);
 
+  print(i is int);
+  print(j is! int);
 }

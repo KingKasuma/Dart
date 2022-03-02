@@ -1,7 +1,11 @@
-main(){
+main() {
   var a = 10;
   final double b = 10;
   const double c = 10;
+
+  late final double x;
+  x = 10;
+  print(x);
 
   //final personasFinal = ['Juan', 'Pedro', 'Fernando'];
   //const personasConst = ['Juan', 'Pedro', 'Fernando'];

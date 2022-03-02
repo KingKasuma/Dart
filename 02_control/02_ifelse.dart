@@ -1,13 +1,12 @@
 import 'dart:io';
 
-main(){
+main() {
   stdout.writeln('¿Cual es tu edad?');
-  int edad = int.parse(stdin.readLineSync());
+  int edad = int.parse(stdin.readLineSync() ?? '0');
 
-  if(edad >= 18){
+  if (edad >= 18) {
     stdout.writeln('Eres mayor de edad estas viejo');
-  }else{
+  } else {
     stdout.writeln('Eres menor de edad');
   }
-
 }

@@ -1,14 +1,13 @@
-main(List<String> args){
+main(List<String> args) {
   //saludar('Hola', 'Fernando');
-  saludar2( veces: 10, mensaje: 'Hola', nombre: 'Fernando' );
+  saludar2('saludos', veces: 20, nombre: 'Tony');
 }
 
-void saludar(String mensaje, [String nombre = '<insertar nombre>']){
-  print('$mensaje $nombre');
+void saludar(String mensaje,
+    [String nombre = '<insertar nombre>', int edad = 10]) {
+  print('$mensaje $nombre - $edad');
 }
 
-void saludar2({String nombre, String mensaje, int veces}){
-  for(var i = 0; i < veces; i++){
-    print('$mensaje $nombre');
-  }
+void saludar2(String mensaje, {required String nombre, int? veces}) {
+  print('$mensaje $nombre - $veces');
 }
