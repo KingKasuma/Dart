@@ -2,45 +2,40 @@
 // Los mixins es una forma de pasar atributos y metodos a las clases que lo esten implementando
 // Los mixins no se pueden instanciar
 // Los mixins no pueden tener constructores
-mixin Logger{
-
-  void imprimir(String texto){
+mixin Logger {
+  void imprimir(String texto) {
     final hoy = DateTime.now();
     print('$hoy :::: $texto');
   }
 }
 
-class Logger2{
-  void imprimir2(String texto){
+class Logger2 {
+  void imprimir2(String texto) {
     final hoy = DateTime.now();
     print('$hoy :::: $texto');
   }
 }
 
-abstract class Astro with Logger{
+abstract class Astro with Logger {
+  String? nombre;
 
-  String nombre;
-
-  Astro(){
+  Astro() {
     imprimir('-- Init del Astro --');
   }
 
-  void existo(){
+  void existo() {
     imprimir('-- Soy un ser celestial y existo --');
   }
-
 }
 
-class Asteroide extends Astro with Logger, Logger2{
-  String nombre;
-  Asteroide(this.nombre){
+class Asteroide extends Astro with Logger, Logger2 {
+  String? nombre;
+  Asteroide(this.nombre) {
     //imprimir('Soy $nombre');
     imprimir2('Soy $nombre');
   }
 }
 
-main(){
-
+main() {
   final ceres = new Asteroide('Ceres');
-
 }

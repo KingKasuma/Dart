@@ -1,12 +1,11 @@
-class Persona{
-  
+class Persona {
   // Campos o propiedades
-  String nombre;
-  int edad;
+  String? nombre;
+  int? edad;
   String _bio = 'Hola soy una propiedad privada';
 
   // Get y sets
-  String get bio => _bio.toUpperCase();  
+  String get bio => _bio.toUpperCase();
 
   //set bio(String texto){
   //  _bio = texto;
@@ -15,18 +14,18 @@ class Persona{
 
   // Constructores
   //Persona(int edad, String nombre){
-    //print("Constructor");
+  //print("Constructor");
   //  this.edad = edad;
   //  this.nombre = nombre;
   //}
   Persona({this.edad = 0, this.nombre = 'Sin nombre'});
 
   //Constructor con nombre
-  Persona.persona30(this.nombre){
+  Persona.persona30(this.nombre) {
     this.edad = 30;
   }
 
-  Persona.persona40(String nombre){
+  Persona.persona40(String nombre) {
     this.edad = 40;
     this.nombre = nombre;
   }
